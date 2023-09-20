@@ -1,0 +1,494 @@
+{
+    "tests": [
+      {
+        "name": "applicationLoads",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#applicationLoads test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchInvalidLimit",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchInvalidLimit test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchInvalidOrderBy",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchInvalidOrderBy test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchInvalidDirection",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchInvalidDirection test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchInvalidPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchInvalidPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchFullDefault",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchFullDefault test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchFullDefaultLimit",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchFullDefaultLimit test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchFullDefaultLimitPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchFullDefaultLimitPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByTitle",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByTitle test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByYear",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByYear test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByYearDesc",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByYearDesc test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByDirector",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByDirector test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByGenre",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByGenre test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchByGenreRatingDesc",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchByGenreRatingDesc test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchNoneFound",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchNoneFound test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchAdminCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchAdminCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchEmployeeCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchEmployeeCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPremiumCanNotSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPremiumCanNotSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonInvalidLimit",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonInvalidLimit test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonInvalidOrderBy",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonInvalidOrderBy test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonInvalidDirection",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonInvalidDirection test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonInvalidPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonInvalidPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPerson",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPerson test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonRatingDesc",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonRatingDesc test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonYearDesc",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonYearDesc test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonNoneFound",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonNoneFound test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonAdminCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonAdminCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonEmployeeCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonEmployeeCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesSearchPersonPremiumCanNotSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesSearchPersonPremiumCanNotSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "movieById",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#movieById test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "movieByIdNoneFound",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#movieByIdNoneFound test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesByIdAdminCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesByIdAdminCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesByIdEmployeeCanSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesByIdEmployeeCanSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "moviesByIdPremiumCanNotSeeHidden",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#moviesByIdPremiumCanNotSeeHidden test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchInvalidLimit",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchInvalidLimit test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchInvalidOrderBy",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchInvalidOrderBy test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchInvalidDirection",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchInvalidDirection test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchInvalidPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchInvalidPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchDefault",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchDefault test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchDefaultLimit",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchDefaultLimit test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchDefaultLimitPage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchDefaultLimitPage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchByName",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchByName test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchByBirthday",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchByBirthday test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchByMovieTitlePage",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchByMovieTitlePage test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchByMovieTitlePopularityDesc",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchByMovieTitlePopularityDesc test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personSearchNoneFound",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personSearchNoneFound test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "personById",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personById test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 3
+      },
+      {
+        "name": "personByIdNoneFound",
+        "setup": "",
+        "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=MoviesServiceTest#personByIdNoneFound test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 3
+      }
+    ]
+  }

@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "movie",
+      "type": "com.github.klefstad_teaching.cs122b.movies.config.MoviesServiceConfig",
+      "sourceType": "com.github.klefstad_teaching.cs122b.movies.config.MoviesServiceConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
